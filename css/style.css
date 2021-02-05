@@ -1,0 +1,26 @@
+/* Propreità generali */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Proprietà colonne */
+[class*="col-"]{
+  float: left;
+  min-height: 150px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 150px;
+  background-color: pink;
+}
+
+/* Riga annidata */
+[class*="col-"] > .row{
+  margin: 10px;
+}
+/* Colonna in riga annidata */
+[class*="col-"] > .row > [class*="col-"]{
+  border: 1px solid white;
+  background-color: violet;
+}
